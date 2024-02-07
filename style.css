@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins' , 'san-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #222;
+    color: #eaeaea;
+}
+header{
+    width: 100%;
+    padding: 20px 4%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.navbar a{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #eaeaea;
+    margin: 0 10px;
+    transition: .3s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.navbar a:hover{
+    color: darkgoldenrod;
+}
+.navbar a:focus{
+    color: darkgoldenrod;
+    text-shadow: 0 0 5px darkgoldenrod;
+}
+.social-media a{
+    text-decoration: none;
+    color: #eaeaea;
+    font-size: 20px;
+    margin: 0 5px;
+    transition: .3s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.social-media a:hover{
+    color: darkgoldenrod;
+    text-shadow: 0 0 5px darkgoldenrod;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8% 0;
+    position: relative;
+}
+.home-content{
+    max-width: 630px;
+}
+.home-content h1{
+    line-height: 1;
+    font-size: 50px;
+    text-shadow: 0 3px 2px black;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.home-content h3{
+    color: darkgoldenrod;
+    text-shadow: 0 3px 2px black;
+    font-size: 35px;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 15px 0 30px;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.about-btn{
+    background-color: darkgoldenrod;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px 28px;
+    border: 2px solid darkgoldenrod;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: .3s;
+    box-shadow: 0 0 15px darkgoldenrod;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.about-btn:hover{
+    color: darkgoldenrod;
+    background: transparent;
+    box-shadow: 0 0 15px darkgoldenrod, 0 0 15px darkgoldenrod inset;
+}
+.about-btn:active{
+    transform: scale(0.96);
+}
+.home-img img{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10% 0;
+    /* overflow: hidden; */
+    position: relative;
+}
+.about-content{
+    max-width: 630px;
+}
+.about-content h1{
+    line-height: 3;
+    font-size: 40px;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    color: darkgoldenrod;
+}
+.about-content p{
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8% 0;
+    overflow: hidden;
+    position: relative;
+}
+.contact-content h2{
+    text-align: center;
+    font-size: 40px;
+}
+.social-media2{
+    text-align: center;
+}
+.social-media2 a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    margin: 0 5px;
+}
+.social-media2 a:hover{
+    color: darkgoldenrod;
+    text-shadow: 0 0 5px darkgoldenrod;
+}
+.pricing{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 2% 0;
+    position: relative;
+    gap: 116px;
+    flex-wrap: wrap;
+}
+.pricing .pricing-cards{
+    width: 300px;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+    border-radius: 5px;
+    transition: .3s;
+}
+.silver-card{
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, #3a3a3a 0%, #5f5f5f 50%, #3a3a3a 100%);
+}
+.silver-card img{
+    transform: rotate(15deg);
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px black, 5px 5px 50px white;
+}
+.silver-card h4{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.silver-card a{
+    border: 2px solid #222;
+    color: #eaeaea;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: #222;
+    transition: .3s;
+    margin-left: 100px;
+}
+.silver-card a:hover{
+    background: transparent;
+}
+.recommend{
+    position: relative;
+    top: -5px;
+    text-align: center;
+    background: #ffd800;
+    color: #ff6d00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 10px #ffd800;
+}
+.gold-card{
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, #ff6d00 0%, #ffd800 50%, #ff6d00 100%);
+    transform: scale(1.07);
+}
+.gold-card img{
+    transform: rotate(15deg);
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px black, 5px 5px 50px darkgoldenrod;
+}
+.gold-card h4{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: darkgoldenrod;
+}
+.gold-card p{
+    color: #222;
+}
+.gold-card a{
+    border: 2px solid darkgoldenrod;
+    color: #eaeaea;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: darkgoldenrod;
+    transition: .3s;
+    margin-left: 100px;
+}
+.gold-card a:hover{
+    background: transparent;
+}
+.diam-card{
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, #0084ff 0%, #00ccff 50%, #0084ff 100%);
+}
+.diam-card img{
+    transform: rotate(15deg);
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px black, 5px 5px 50px aqua;
+}
+.diam-card h4{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: darkslategray;
+}
+.diam-card p{
+    color: #222;
+}
+.diam-card a{
+    border: 2px solid darkslategray;
+    color: #eaeaea;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: darkslategray;
+    transition: .3s;
+    margin-left: 100px;
+}
+.diam-card a:hover{
+    background: transparent;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+@-webkit-keyframes fadeInLeft {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        }
+}
+@keyframes fadeInLeft {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        }
+} 
+@-webkit-keyframes fadeInUp {
+            0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+            }
+            100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            }
+}
+@keyframes fadeInUp {
+            0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+            }
+            100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            }
+}
+@-webkit-keyframes fadeInRight {
+            0% {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            }
+            100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            }
+}
+@keyframes fadeInRight {
+            0% {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+            }
+            100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            }
+}
+
+@media all and (max-width: 350px) {
+    .logo{
+        font-size: 25px;
+        margin-left: 100px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    header{
+        display: block;
+        justify-content: center;
+        padding: 10px 4%;
+    }
+    .home{
+        display: contents;
+        padding-top: 130px;
+        padding: 0;
+    }
+    .home-img img{
+        z-index: -1;
+        position:absolute;
+        left:30px;
+        top:100px;
+        z-index:-1;
+        filter: brightness(50%);
+        width: 300px;
+    }
+    .home-content{
+        padding-top: 130px;
+        max-width: 250px;
+    }
+    .home-content h1{
+        font-size: 35px;
+    }
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content p{
+        font-size: 10px;
+    }
+    .home-content a{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    .about{
+        display: contents;
+    }
+    .about-content{
+        margin-top: 250px;
+        max-width: 250px;
+        margin-left: 40px;
+    }
+    .about-content h1{
+        font-size: 35px;
+    }
+    .about-content p{
+        font-size: 10px;
+    }
+    .about-img img{
+        position: absolute;
+        top: 550px;
+        left: 50px;
+        filter: brightness(50%);
+    }
+    .gold-card{
+        transform: none;
+    }
+}
+@media all and (max-width: 425px) {
+    .logo{
+        font-size: 25px;
+        margin-left: 130px;
+    }
+    .navbar{
+        margin-left: 30px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    header{
+        display: block;
+        justify-content: center;
+        padding: 10px 4%;
+    }
+    .home{
+        display: contents;
+        padding-top: 130px;
+        padding: 0;
+    }
+    .home-img img{
+        z-index: -1;
+        position:absolute;
+        left:130px;
+        top:100px;
+        z-index:-1;
+        filter: brightness(50%);
+        width: 300px;
+    }
+    .home-content{
+        padding-top: 130px;
+        max-width: 250px;
+    }
+    .home-content h1{
+        font-size: 35px;
+    }
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content p{
+        font-size: 10px;
+    }
+    .home-content a{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    .about{
+        display: contents;
+    }
+    .about-content{
+        margin-top: 250px;
+        max-width: 250px;
+        margin-left: 40px;
+    }
+    .about-content h1{
+        font-size: 35px;
+    }
+    .about-content p{
+        font-size: 10px;
+    }
+    .about-img img{
+        position: absolute;
+        top: 550px;
+        left: 50px;
+        filter: brightness(50%);
+    }
+    .gold-card{
+        transform: none;
+    }
+}
+@media all and (max-width: 768px) {
+    .home{
+        padding-top: 100px;
+        padding-right: -50px;
+    }
+    .home-img img{
+        width: 300px;
+    }
+    .about{
+        gap: 50px;
+    }
+    .about-img img{
+        width: 150px;
+    }
+    .contact{
+        padding-right: -50px;
+    }
+    .pricing{
+        padding-right: -50px;
+    }
+}
+@media all and (min-width: 2560px) {
+    .logo{
+        font-size: 70px;
+    }
+    .navbar a{
+        font-size: 30px;
+    }
+    .home-content h1{
+        font-size: 80px;
+    }
+    .home-content h3{
+        font-size: 65px;
+    }
+    .home-content p{
+        font-size: 25px;
+    }
+    .home-img img{
+        width: 600px;
+    }
+    .about-btn{
+        font-size: 25px;
+    }
+    .about-content p{
+        font-size: 25px;
+    }
+    .about-content h1{
+        font-size: 65px;
+    }
+    .about-img img{
+        width: 350px;
+    }
+    .contact-content h2{
+        font-size: 70px;
+    }
+    .social-media2 a{
+        font-size: 50px;
+    }
+    .pricing{
+        gap: 300px;
+    }
+    .pricing-cards{
+        transform: scale(1.6);
+    }
+
+}
